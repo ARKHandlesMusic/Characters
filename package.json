@@ -1,0 +1,52 @@
+{
+  "name": "bottomless",
+  "version": "1.0.0",
+  "description": "My Remotion video",
+  "repository": {},
+  "license": "UNLICENSED",
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "private": true,
+  "dependencies": {
+    "@fontsource/caveat": "^5.3.0",
+    "@react-three/fiber": "^9.8.2",
+    "@remotion/cli": "4.0.545",
+    "@remotion/media": "4.0.545",
+    "@remotion/three": "4.0.545",
+    "@types/three": "^0.187.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "remotion": "4.0.545",
+    "three": "^0.187.0"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.545",
+    "@types/react": "19.3.0",
+    "@types/web": "0.0.166",
+    "eslint": "10.12.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "node scripts/studio-proxy.mjs",
+    "start": "node scripts/studio-proxy.mjs",
+    "build": "remotion bundle",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc",
+    "render:list": "remotion compositions",
+    "render:guy": "remotion render Guy-Rig-4K out/1-guy/Guy-Rig-4K.mp4",
+    "render:ember": "remotion render Ember-Rig-4K out/2-ember/Ember-Rig-4K.mp4",
+    "render:lumi": "remotion render Lumi-Rig-4K out/3-lumi/Lumi-Rig-4K.mp4",
+    "render:villain": "remotion render Villain-Rig-4K out/4-villain/Villain-Rig-4K.mp4",
+    "render:room-day": "remotion render Room-Day-4K out/5-room-and-city/Room-Day-4K.mp4",
+    "render:room-night": "remotion render Room-Night-4K out/5-room-and-city/Room-Night-4K.mp4",
+    "render:room-muted": "remotion render Room-Muted-4K out/5-room-and-city/Room-Muted-4K.mp4",
+    "render:room-window": "remotion render Room-Window-4K out/5-room-and-city/Room-Window-4K.mp4",
+    "render:city-day": "remotion render City-Day-4K out/5-room-and-city/City-Day-4K.mp4",
+    "render:city-night": "remotion render City-Night-4K out/5-room-and-city/City-Night-4K.mp4"
+  },
+  "allowScripts": {
+    "esbuild": false
+  }
+}
